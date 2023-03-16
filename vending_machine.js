@@ -16,10 +16,15 @@ while (true) {
         var quantity = parseInt(prompt("How many " + choice.charAt(0).toUpperCase() + choice.slice(1) + " would you like to buy? "));
         var cost = menu[choice.toLowerCase()] * quantity;
         console.log("The total cost is " + cost + " won.");
-        var paid = parseInt(prompt("How much have you inserted? "));
+        var paid = 0;
         while (paid < cost) {
-            console.log("Insufficient amount. Please insert more money.");
-            paid += parseInt(prompt("How much have you inserted? "));
+            var amount = parseInt(prompt("How much have you inserted? "));
+            if (isNaN(amount)) {
+                console.log("Invalid input. Please enter a valid number.");
+            } else {
+                paid += amount;
+                console.log("Total paid: " + paid + " won.");
+            }
         }
         var change = paid - cost;
         if (change > 0) {
@@ -31,3 +36,4 @@ while (true) {
     }
 }
 console.log("Thank you for using the vending machine!");
+
