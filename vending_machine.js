@@ -16,8 +16,8 @@ function buyItem(choice) {
         console.log("The total cost is " + cost + " won.");
     }
     var paid = 0;
-    while (paid < cost) {
-        var amount = parseInt(prompt("How much have you inserted? "));
+    while (paid <= cost) {
+        var amount = parseInt(prompt("Please insert 1,000 won!"));
         if (isNaN(amount)) {
             console.log("Invalid input. Please enter a valid number.");
         } else {
@@ -25,14 +25,6 @@ function buyItem(choice) {
             console.log("Total paid: " + paid + " won.");
         }
     }
-    var change = paid - cost;
-    if (change > 0) {
-        console.log("Here is your " + quantity + " " + choice.charAt(0).toUpperCase() + choice.slice(1) + ".");
-        console.log("And here is your " + change + " won in change.");
-    } else {
-        console.log("Here is your " + quantity + " " + choice.charAt(0).toUpperCase() + choice.slice(1) + ".");
-    }
-    console.log("Have a nice day!");
 }
 
 console.log("Welcome to the vending machine!");
