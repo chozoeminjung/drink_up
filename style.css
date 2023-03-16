@@ -16,21 +16,21 @@ body {
 
 /* This styles the headings */
 h1, h2, h3 {
-  color: #2228cf;
+  color: #01020f;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 /* This styles the buttons */
 button {
-  background-color: #4e4caf;
+  background-color: #054b5e;
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  box-shadow: 0px 3px 0px #170c7a;
+  box-shadow: 0px 3px 0px #044355;
   transition: all 0.3s ease;
   margin: 10px 0;
 
@@ -38,7 +38,7 @@ button {
 
 button:hover {
   transform: translateY(-1px);
-  box-shadow: 0px 6px 0px #5766b9;
+  box-shadow: 0px 6px 0px #579fb9;
 }
 
 /* This styles the input fields */
@@ -77,14 +77,14 @@ input[type="text"] {
 
 /* This styles the vending machine buttons */
 button {
-  background-color: #5b4caf;
+  background-color: #4cafa2;
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  box-shadow: 0px 3px 0px #290969;
+  box-shadow: 0px 3px 0px #07505d;
   transition: all 0.3s ease;
   margin: 5px;
   margin: 10px 0;
@@ -93,7 +93,7 @@ button {
 
 button:hover {
   transform: translateY(-1px);
-  box-shadow: 0px 6px 0px #7caee4;
+  box-shadow: 0px 6px 0px #7ce4db;
 }
 
 /* This styles the vending machine coin slot */
