@@ -252,85 +252,34 @@ nav a:hover {
   background-color: #555;
 }
 
-.vending-machine .display:before {
-  content: "MENU";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 2px 2px #000;
-}
-
-.vending-machine .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.vending-machine .menu .menu-item {
-  width: 200px;
-  height: 200px;
+.menu {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
   background-color: #f5f5f5;
-  border-radius: 50%;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
-  cursor: pointer;
 }
 
-.vending-machine .menu .menu-item:hover:before {
-  opacity: 0.7;
+.menu h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.vending-machine .menu .menu-item:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #007bff;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -10px;
-  left: -10px;
-  right: -10px;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.vending-machine .menu .menu-item img {
-  max-width: 80%;
-  max-height: 80%;
-  object-fit: contain;
-}
-
-.vending-machine .menu .menu-item h3 {
-  color: #333;
-  font-size: 24px;
+.menu ul {
+  list-style: none;
   margin: 0;
-  z-index: 1;
-  position: relative;
-  text-align: center;
+  padding: 0;
 }
-This code adds a "MENU" label to the top of the display area and creates a menu section with circular menu items for each drink option. The menu items have a hover effect that darkens the background color and the active menu item is highlighted with a blue border.
 
+.menu li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
 
-
-
-Zoe
-can i replace this code instead of my old version? 
-Yes, you can replace your old CSS code with this updated code. However, please note that this updated code only includes the CSS styles for the vending machine and the menu. If you have any other CSS styles in your old code that are not included in this updated code, you will need to add them back in.
-
-
-
-
+.menu span {
+  float: right;
+  font-weight: bold;
+}
 
