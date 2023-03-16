@@ -1,12 +1,17 @@
-var menu = {'coke': 1000, 'soda': 1000, 'coffee': 1000};
+var menu = {'coke': 1000, 'soda': 800, 'coffee': 1200};
 
 function buyItem(choice) {
-    if (!(choice.toLowerCase() in menu)) {
+    choice = choice.toLowerCase();
+    if (!(choice in menu)) {
         console.log("Invalid choice. Please try again.");
         return;
     }
-    var quantity = parseInt(prompt("How many " + choice.charAt(0).toUpperCase() + choice.slice(1) + " would you like to buy? "));
-    var cost = menu[choice.toLowerCase()] * quantity;
+    var quantity = parseInt(prompt("How many " + choice + "s would you like to buy? "));
+    if (isNaN(quantity)) {
+        console.log("Invalid input. Please enter a valid number.");
+        return;
+    }
+    var cost = menu[choice] * quantity;
     console.log("The total cost is " + cost + " won.");
     var paid = 0;
     while (paid < cost) {
@@ -20,10 +25,10 @@ function buyItem(choice) {
     }
     var change = paid - cost;
     if (change > 0) {
-        console.log("Here is your " + quantity + " " + choice.charAt(0).toUpperCase() + choice.slice(1) + ".");
+        console.log("Here is your " + quantity + " " + choice + "s.");
         console.log("And here is your " + change + " won in change.");
     } else {
-        console.log("Here is your " + quantity + " " + choice.charAt(0).toUpperCase() + choice.slice(1) + ".");
+        console.log("Here is your " + quantity + " " + choice + "s.");
     }
 }
 
@@ -33,5 +38,6 @@ for (var item in menu) {
     console.log(item.charAt(0).toUpperCase() + item.slice(1) + ": " + menu[item] + " won");
 }
 console.log("Thank you for using the vending machine!");
+
 
 
