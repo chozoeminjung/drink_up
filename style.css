@@ -1,45 +1,50 @@
 /* This sets the background color of the entire page to white */
 body {
-    background-color: #fff;
-  }
-  
-  /* This centers the content of the page */
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* This styles the headings */
-  h1, h2, h3 {
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* This styles the buttons */
-  button {
-    background-color: #007bff;
-    background-image: linear-gradient(to bottom, #007bff, #0062cc);
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, .25);
-  }
-  
-  /* This styles the input fields */
-  input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-  }
+  background-color: #fff;
+}
+
+/* This centers the content of the page */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* This styles the headings */
+h1, h2, h3 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* This styles the buttons */
+button {
+  background-color: #007bff;
+  background-image: linear-gradient(to bottom, #007bff, #0062cc);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+button:last-of-type {
+  margin-right: 0;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .25);
+}
+
+/* This styles the input fields */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
