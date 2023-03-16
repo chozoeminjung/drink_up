@@ -32,6 +32,6 @@ console.log("Here are the available options:");
 for (var item in menu) {
     console.log(item.charAt(0).toUpperCase() + item.slice(1) + ": " + menu[item] + " won");
 }
-console.log("Thank you for using the vending machine!"); 
+console.log("Thank you for using the vending machine!");
 
 
