@@ -51,7 +51,7 @@ input[type="text"] {
 
 /* This styles the vending machine body */
 .vending-machine {
-  background-color: #dcdded;
+  background-color: #edf466;
   border: 10px solid #333;
   border-radius: 10px;
   padding: 20px;
