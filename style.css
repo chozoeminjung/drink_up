@@ -16,7 +16,7 @@ body {
 
 /* This styles the headings */
 h1, h2, h3 {
-  color: #333;
+  color: #2228cf;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -51,7 +51,7 @@ input[type="text"] {
 
 /* This styles the vending machine body */
 .vending-machine {
-  background-color: #fff;
+  background-color: #dcdded;
   border: 10px solid #333;
   border-radius: 10px;
   padding: 20px;
@@ -173,7 +173,7 @@ button:hover {
 }
 
 .vending-machine .item-container .item.active:before {
-  background-color: #28a745;
+  background-color: #28a1a7;
 }
 
 .vending-machine .item-container .item.disabled:before {
@@ -289,3 +289,7 @@ nav a:hover {
   font-weight: bold;
 }
 
+
+.col-sm-4 {
+  margin-bottom: 10px; /* add 10px of margin at the bottom of each column */
+}
