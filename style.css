@@ -6,7 +6,7 @@ body {
 
 /* This centers the content of the page */
 .container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   background-color: #eee;
@@ -18,7 +18,7 @@ body {
 h1, h2, h3 {
   color: #01020f;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* This styles the buttons */
@@ -51,6 +51,7 @@ input[type="text"] {
 
 /* This styles the vending machine body */
 .vending-machine {
+  max-width: 500px;
   background-color: #edf466;
   border: 10px solid #333;
   border-radius: 10px;
