@@ -6,15 +6,12 @@ for (var item in menu) {
     console.log(item.charAt(0).toUpperCase() + item.slice(1) + ": " + menu[item] + " won");
 }
 
-while (true) {
-    var choice = prompt("Please enter your choice (or 'q' to quit): ");
-    if (choice.toLowerCase() == 'q') {
-        break;
-    } else if (!(choice.toLowerCase() in menu)) {
-        console.log("Invalid choice. Please try again.");
-    } else {
+var buttons = document.querySelectorAll('button');
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+        var choice = this.innerHTML.toLowerCase();
         var quantity = parseInt(prompt("How many " + choice.charAt(0).toUpperCase() + choice.slice(1) + " would you like to buy? "));
-        var cost = menu[choice.toLowerCase()] * quantity;
+        var cost = menu[choice] * quantity;
         console.log("The total cost is " + cost + " won.");
         var paid = 0;
         while (paid < cost) {
@@ -33,7 +30,9 @@ while (true) {
         } else {
             console.log("Here is your " + quantity + " " + choice.charAt(0).toUpperCase() + choice.slice(1) + ".");
         }
-    }
+    });
 }
+
 console.log("Thank you for using the vending machine!");
+
 
